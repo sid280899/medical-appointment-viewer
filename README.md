@@ -107,14 +107,15 @@ Visit https://appointment-backend-n3zk.onrender.com
 - Automatically deploys on push to `main` branch
 
 ### ✅ Backend on Railway/Render
-- Add environment variables in Railway/Render dashboard
+- Add environment variables in Render dashboard
 - Make sure CORS is enabled to allow frontend requests
 
 ---
 
 ## 📸 Screenshots
-
-![Alt Text](https://drive.google.com/file/d/1AtiJB7Rf6-WFxCSfo3zyJbLmQwHMJ4_a/view?usp=drive_link)
+```
+![Doctor Banner](https://drive.google.com/file/d/1AtiJB7Rf6-WFxCSfo3zyJbLmQwHMJ4_a/view?usp=drive_link)
+```
 
 
 ---
