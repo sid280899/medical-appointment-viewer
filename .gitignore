@@ -1,0 +1,9 @@
+# Ignore Python/Django virtual environment
+env/
+
+# Ignore environment variable files
+.env
+
+# Node modules (if not already included)
+appointment-frontend/node_modules/
+appointment_backend/__pycache__/

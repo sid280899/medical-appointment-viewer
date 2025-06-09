@@ -1,0 +1,23 @@
+# Ignore Python virtual environment
+env/
+
+# Ignore environment files
+*.env
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Node.js dependencies
+node_modules/
+
+# Log files
+*.log
+
+# React build folder (if using Vite or Create React App)
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
