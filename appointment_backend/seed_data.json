@@ -1,0 +1,38 @@
+[
+  {
+    "model": "core.doctor",
+    "pk": 1,
+    "fields": { "name": "Dr. Ravi Kumar", "specialization": "Orthopedics" }
+  },
+  {
+    "model": "core.doctor",
+    "pk": 2,
+    "fields": { "name": "Dr. Naresh Trehan", "specialization": "Cardiologist" }
+  },
+  {
+    "model": "core.doctor",
+    "pk": 3,
+    "fields": {
+      "name": "Dr. Sandeep Vaishya",
+      "specialization": "Neurologist"
+    }
+  },
+  {
+    "model": "core.doctor",
+    "pk": 4,
+    "fields": { "name": "Dr. Vikram Kalra", "specialization": "Nephrologist" }
+  },
+  {
+    "model": "core.doctor",
+    "pk": 5,
+    "fields": {
+      "name": "Dr. Randhir Sud",
+      "specialization": "Gastroenterologist"
+    }
+  },
+  {
+    "model": "core.doctor",
+    "pk": 6,
+    "fields": { "name": "Dr. Vinod Raina", "specialization": "Oncologist" }
+  }
+]
