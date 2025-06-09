@@ -59,7 +59,7 @@ WSGI_APPLICATION = "appointment_backend.wsgi.application"
 # Database setup using dj_database_url for Render PostgreSQL
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL')
+        default='postgresql://medical_appointment_db_user:NUDHnhSCmS1UMr0p3AAKFWSVv9QnYNsp@dpg-d13bkabuibrs7381uhng-a.singapore-postgres.render.com/medical_appointment_db'
     )
 }
 # DATABASES = {
