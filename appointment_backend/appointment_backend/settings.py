@@ -8,7 +8,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-e3=38h)xn+dr_w!6@w*p@gwbzku8ahi$vt7ewak7ng76m$$8ca")
 
 # Debug mode - False for production, True for dev. Controlled by environment variable.
-DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
+# DEBUG = os.environ.get("DJANGO_DEBUG", "False") == "True"
+DEBUG = True
 
 # Allowed hosts - controlled by environment variable, defaults to '*' (all hosts)
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(",")
