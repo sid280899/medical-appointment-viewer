@@ -43,7 +43,7 @@ npm run dev
 ```env
 FRONTEND_URL= https://medical-appointment-viewer.vercel.app/
 ---
-
+```
 ### 🛠️ Backend (Django + PostgreSQL):
 
 > Located in: `appointment-backend/`
