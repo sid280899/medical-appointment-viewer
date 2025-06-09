@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import AppointmentList from "../components/AppointmentList";
 import AppointmentFilters from "../components/AppointmentFilters";
 import { Link } from "react-router-dom";
-import { api } from "../api/axios";
+import  api  from "../api/axios";
 
 const Dashboard = () => {
   const [appointments, setAppointments] = useState([]);

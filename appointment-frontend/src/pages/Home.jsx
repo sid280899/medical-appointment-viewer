@@ -1,12 +1,36 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Dashboard from "../pages/Dashboard";
 import { motion } from "framer-motion";
 import doctorImage from "../assets/doctor.png"; // Make sure this path matches your actual file
 import { Menu } from "lucide-react";
+const BASE_URL = "https://appointment-backend-n3zk.onrender.com/api";
 
 const Home = () => {
   const [showAppointments, setShowAppointments] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [doctors, setDoctors] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // ✅ Fetch doctors from backend on mount
+    fetch(`${BASE_URL}/doctors/`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch doctors");
+        }
+        return res.json();
+      })
+      .then(data => {
+        setDoctors(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Error fetching doctors:", err);
+        setError("Unable to load doctor data");
+        setLoading(false);
+      });
+  }, []);
 
   if (showAppointments) {
     return <Dashboard />;
@@ -116,6 +140,24 @@ const Home = () => {
           />
         </div>
       </div>
+      {/* Optional: Doctor List */}
+<div className="px-4 md:px-16 py-8">
+  <h2 className="text-xl font-semibold mb-4 text-blue-700">Our Doctors</h2>
+  {loading && <p>Loading doctors...</p>}
+  {error && <p className="text-red-600">{error}</p>}
+  <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {doctors.map((doc) => (
+      <li
+        key={doc.id}
+        className="border p-4 rounded-lg shadow-sm hover:shadow-md transition"
+      >
+        <h3 className="font-bold text-lg">{doc.name}</h3>
+        <p className="text-sm text-gray-600">{doc.specialization}</p>
+      </li>
+    ))}
+  </ul>
+</div>
+
     </div>
   );
 };

@@ -1,6 +1,6 @@
 // src/components/DoctorSelectModal.jsx
 import { useEffect, useState } from "react";
-import { api } from "../api/axios";
+import  api  from "../api/axios";
 import { X } from "lucide-react"; 
 
 const DoctorSelectModal = ({ isOpen, onClose, onSelect }) => {

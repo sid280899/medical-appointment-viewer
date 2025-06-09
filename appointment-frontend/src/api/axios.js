@@ -1,5 +1,11 @@
-import axios from 'axios';
+// src/api/axios.js
+import axios from "axios";
 
-export const api = axios.create({
-  baseURL: 'http://localhost:8000/api', // Adjust if using a different port or path
+const api = axios.create({
+  baseURL: "https://appointment-backend-n3zk.onrender.com/api",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
+
+export default api;
