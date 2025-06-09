@@ -58,7 +58,14 @@ WSGI_APPLICATION = "appointment_backend.wsgi.application"
 
 # Database setup using dj_database_url for Render PostgreSQL
 DATABASES = {
-    "default": dj_database_url.config(conn_max_age=600)
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'appointments_db',
+        'USER': 'appointments_db',
+        'PASSWORD': 'Swami',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
 
 AUTH_PASSWORD_VALIDATORS = [
