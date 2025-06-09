@@ -112,15 +112,6 @@ Visit https://appointment-backend-n3zk.onrender.com
 
 ---
 
-
-
-## 📸 Screenshots
-
-![Doctor Banner](https://drive.usercontent.google.com/download?id=1AtiJB7Rf6-WFxCSfo3zyJbLmQwHMJ4_a&export=view&authuser=0)
-
-
-
-
 ---
 
 ## 🙋‍♂️ Author
