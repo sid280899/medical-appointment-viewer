@@ -41,7 +41,7 @@ npm run dev
 
 #### 5. Access the frontend:
 ```env
-FRONTEND_URL= https://medical-appointment-viewer.vercel.app/
+FRONTEND_URL= [https://medical-appointment-viewer.vercel.app/](https://medical-appointment-viewe-siddheshneharkar70-gmailcoms-projects.vercel.app/)
 ---
 ```
 ### 🛠️ Backend (Django + PostgreSQL):
@@ -114,7 +114,8 @@ Visit https://appointment-backend-n3zk.onrender.com
 
 ## 📸 Screenshots
 
-> Add screenshots here
+![Alt Text](https://drive.google.com/file/d/1AtiJB7Rf6-WFxCSfo3zyJbLmQwHMJ4_a/view?usp=drive_link)
+
 
 ---
 
